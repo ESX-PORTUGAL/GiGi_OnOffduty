@@ -24,6 +24,6 @@ It's made for the Ambulance job, Police Job, Mechanic Job.
 
 You can add more Jobs if you want.
 
-For everything to work under conditions of Mystic Notifications and progressbar.
+For everything to work under conditions you need Mystic Notifications and progressbar.
 
 Hope you like it ;) !
