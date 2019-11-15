@@ -1,6 +1,3 @@
-local Keys = {["E"] = 38,
-}
-
 ESX = nil            
 local PlayerData = {}
 
@@ -29,7 +26,7 @@ Citizen.CreateThread(function ()
       local playerPed = GetPlayerPed(-1)
         if GetDistanceBetweenCoords(GetEntityCoords(GetPlayerPed(-1)), 440.57,-975.68,30.00, true) <= 3.0 then
         DrawText3Ds(440.57,-975.68,30.00 + 0.5, "[~g~E~w~] Entrar / Sair Servico")
-        if IsControlJustReleased(0, Keys['E']) then
+        if IsControlJustReleased(0, 38) then
         RequestAnimDict("missah_2_ext_altleadinout")
         while not HasAnimDictLoaded("missah_2_ext_altleadinout") do
         Citizen.Wait(0)
@@ -41,7 +38,7 @@ Citizen.CreateThread(function ()
             Citizen.Wait(2200)
             ClearPedTasksImmediately(playerPed)
              else 
-              exports['mythic_notify']:DoHudText('error', 'Nao es um Policial.')
+              exports['mythic_notify']:DoHudText('error', 'Nao es um Policia.')
               ClearPedTasksImmediately(playerPed)
             end
           end
